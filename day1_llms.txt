@@ -1,0 +1,20 @@
+Day 1 - LLMs
+
+Microsoft Learn:
+
+- LLM stands for large language model. It's an AI model that works with language and can generate responses.
+- A prompt is what you send to the model, and the completion is its response.
+- Text is broken into tokens. A token can be a whole word or just part of one.
+- The context window is how much text and other information the model can take into account at once.
+- LLMs are used for things like answering questions, summarizing text, and writing code. They can still give wrong answers, even when they sound confident.
+- Different models have different strengths, so the choice depends on what you're using it for.
+
+Karpathy's video:
+
+- LLMs learn patterns from large amounts of text. One of the main things they learn to do is predict the next token, which is how they generate text.
+- Training is when the model learns from data. Inference is when you use the trained model to get a response.
+- A model trained on lots of text isn't automatically a good assistant. Fine-tuning can help it respond more like one.
+- Karpathy describes the model as a kind of lossy compression of its training data. It learns patterns from what it sees, but it doesn't store a perfect copy of the original material.
+- Hallucinations are a problem because the model can give an answer that sounds believable but is actually wrong.
+- Models can also use tools, such as a calculator, to do things they couldn't reliably do just by generating text.
+- The video also gets into models working with images and audio, along with security issues like jailbreaks and prompt injection.

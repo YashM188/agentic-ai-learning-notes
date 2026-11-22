@@ -1,0 +1,22 @@
+Day 2 - Agentic AI and OpenAI Agents SDK
+
+OpenAI Agents SDK Quickstart
+
+- A basic LLM app usually takes an input and returns a response. An agent can go further by using tools and taking multiple steps to complete a task.
+- An agent has instructions that tell it what it should do. In the SDK, you define an agent with a name and instructions.
+- The `Runner` is used to run the agent and get its result.
+- Tools let an agent do things beyond generating text. For example, a tool could call a Python function to perform a calculation or retrieve information.
+- The agent can decide when a tool is useful. The tool runs, its result is returned, and the agent can use that result to continue.
+- Handoffs let one agent pass control to another agent that specializes in a particular task. For example, a general assistant could hand a coding question to a coding specialist.
+
+Building Agents guide
+
+- It's better to start with one agent and add complexity when needed, instead of immediately building a system with lots of agents.
+- Instructions matter because they tell the agent what its goal is and how it should handle a task.
+- Tools can be used to retrieve information or take actions. The agent needs to know which tools are available and when to use them.
+- Guardrails help check inputs or outputs and prevent certain actions or responses.
+- Tracing helps developers see what happened during a run, including tool calls and handoffs. This is useful when trying to figure out why an agent behaved a certain way.
+
+Main things to understand:
+
+An agent isn't just the model itself. It's the model working with instructions, tools, and the code that controls how it runs. The SDK provides a way to build and manage this process in Python.

@@ -1,0 +1,24 @@
+Day 3 - LangGraph, Agent Workflows, and Harness Concepts
+
+LangGraph
+
+- LangGraph is a framework for building workflows where an application needs to keep track of its state and move through different steps.
+- A graph is made up of nodes and edges. Nodes do the work, while edges determine where the workflow goes next.
+- State is the information the workflow keeps track of as it runs. A node can read that information and update it.
+- Workflows don't have to follow exactly the same path every time. For example, an edge can send the workflow in a different direction depending on the result of a step.
+- This makes it possible to combine normal Python logic with LLM calls. Some steps can follow fixed rules, while others can involve the model.
+- LangGraph also supports saving progress and resuming workflows, which is useful for longer tasks.
+
+Agent workflows
+
+- A workflow is the sequence of steps used to complete a task. It can include model calls, tools, decisions, and results from earlier steps.
+- State matters because later steps may need information collected earlier in the workflow.
+- Memory and state are related, but they're not exactly the same. State is the information used during a workflow; memory can help preserve information for later interactions.
+- Conditional edges let a workflow choose what to do next based on its current state or the result of a previous step.
+
+Harness concepts and OpenAI Agents SDK
+
+- A harness is the surrounding system that runs and manages an agent. It handles things like the execution loop, tools, context, and the process of continuing or stopping a run.
+- The OpenAI Agents SDK runs inside your application. It provides components for running agents, calling tools, handling handoffs, and managing turns.
+- The SDK's runner continues the process when the agent calls a tool or hands control to another agent, until it reaches a stopping point.
+- LangGraph focuses on building and controlling graph-based workflows. The Agents SDK provides built-in agent-running and handoff behavior. They can both help build agentic applications, but they approach orchestration differently.
