@@ -44,4 +44,4 @@ Enter a question in the terminal. Type `quit` to exit.
 
 ## What I learned
 
-This project gave me hands-on experience connecting a local language model to a Python application and using tool calling to let the model request calculations from a Python function.
+This project gave me experience connecting a local language model to a Python application and using tool calling to let the model request calculations from a Python function.
